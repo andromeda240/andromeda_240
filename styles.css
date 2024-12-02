@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
    
 html,body{
@@ -128,6 +128,7 @@ html,body{
 }
 /* Room List Section */
 .room-list {
+  width: 18%;
   background-image: linear-gradient(rgb(241, 241, 241), rgb(181, 189, 190));
     border-radius: 30px;
     padding: 20px;
@@ -137,6 +138,9 @@ html,body{
 .room-list h2 {
     margin-top: 0;
     font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 
 .room-list ul {
@@ -155,8 +159,10 @@ html,body{
     border-bottom: 1px solid #eee;
 }
 
-.room-list ul li h6 {
-    color: #888;
+
+.room-list ul li:hover {
+  background-color: #aaa6a6;
+  border-radius: 20px;
 }
 
 .room-list button {
